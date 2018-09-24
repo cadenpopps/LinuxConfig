@@ -150,4 +150,4 @@ then
 	echo '.bash_aliases sourced'
 fi
 
-echo '.bashrc sourced' 
+echo '.bashrc sourced!' 

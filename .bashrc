@@ -150,7 +150,7 @@ function commitBashrc(){
 	git add .bash_aliases
 	git commit -m $(date +%x_%H:%M) > /dev/null
 	git push > /dev/null
-	exit
+	kill
 }
 
 git fetch origin

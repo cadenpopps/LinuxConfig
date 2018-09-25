@@ -154,7 +154,7 @@ function commitBashrc(){
 }
 
 function pullBashrc(){
-	echo "getting latest config files"
+	echo "getting config files"
 	git pull
 	source .bashrc
 }

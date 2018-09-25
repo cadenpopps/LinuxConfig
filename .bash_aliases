@@ -14,7 +14,7 @@ alias gp='git push'
 alias gc='gitcommit'
 alias gm='gitmerge'
 alias gch='git checkout'
-alias glg='git log --pretty=format:"%C(reset)%h %ad%C(yellow bold)%d %Creset %C(cyan bold)%s" --decorate --date=short'
+alias glg='git log --pretty=format:"%C(reset)%h %ad%C(yellow bold)%d %Creset %C(cyan bold)%s" --decorate --date=short'
 
 alias cppc='cppcompile'
 alias cppr='cpprun'

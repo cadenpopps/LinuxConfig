@@ -146,26 +146,19 @@ agent_start () {
 agent_load_env
 
 function commitBashrc(){
-	git add .bashrc
-	git add .bash_aliases
-	git commit -m $(date +%x_%H:%M) > /dev/null
-	git push > /dev/null
-	kill $!
+	cd
+	git fetch
+	git add *
+	git commit -m $(date +%x_%H:%M)
+	git push
 }
 
 function pullBashrc(){
-	echo "getting config files"
+	cd
+	git fetch
 	git pull
 	source .bashrc
 }
-
-cd
-git fetch origin
-if [ $(git rev-parse HEAD) != $(git rev-parse @{u}) ]; then
-	pullBashrc &
-else
-	commitBashrc > /dev/null 2>&1 & 
-fi
 
 if [ -f "$HOME"/.bash_aliases ]; then
 	. "$HOME"/.bash_aliases

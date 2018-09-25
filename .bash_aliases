@@ -2,7 +2,9 @@
 alias ehttpd='cd /mnt/c/Apache24/conf;code httpd.conf;'
 alias eba='vim ~/.bash_aliases'
 alias ebrc='vim ~/.bashrc'
-alias sbrc='source ~/.bashrc'
+alias sbrc='source ~/.bashrc;cbrc'
+alias pbrc='pullBashrc'
+alias cbrc='commitBashrc'
 
 alias cdd='cd /mnt/c/Users/Caden/Desktop'
 alias cdc='cd /mnt/c/Users/Caden/Desktop/cpp'

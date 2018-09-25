@@ -158,7 +158,7 @@ if [ $(git rev-parse HEAD) != $(git rev-parse @{u}) ]; then
 	git pull
 	source .bashrc
 else
-	commitBashrc & 
+	commitBashrc & > /dev/null 
 fi
 
 if [ -f "$HOME"/.bash_aliases ]; then

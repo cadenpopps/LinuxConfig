@@ -153,8 +153,8 @@ if [ $(git rev-parse HEAD) != $(git rev-parse @{u}) ]; then
 else 
 	git add .bashrc
 	git add .bash_aliases
-	git commit -m $(date +%x_%H:%M:%S:%N)
-	git push
+	git commit -m $(date +%x_%H:%M) > /dev/null
+	git push > /dev/null
 fi
 
 if [ -f "$HOME"/.bash_aliases ]; then

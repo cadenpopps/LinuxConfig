@@ -145,16 +145,20 @@ agent_start () {
 
 agent_load_env
 
+function commitBashrc(){
+	git add .bashrc
+	git add .bash_aliases
+	git commit -m $(date +%x_%H:%M) > /dev/null
+	git push > /dev/null
+}
+
 git fetch origin
 if [ $(git rev-parse HEAD) != $(git rev-parse @{u}) ]; then
 	echo "getting latest config files"
 	git pull
 	source .bashrc
-else 
-	git add .bashrc
-	git add .bash_aliases
-	git commit -m $(date +%x_%H:%M) > /dev/null
-	git push > /dev/null
+else
+	commitBashrc & 
 fi
 
 if [ -f "$HOME"/.bash_aliases ]; then

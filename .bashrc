@@ -153,11 +153,16 @@ function commitBashrc(){
 	kill $!
 }
 
-git fetch origin
-if [ $(git rev-parse HEAD) != $(git rev-parse @{u}) ]; then
+function pullBashrc(){
 	echo "getting latest config files"
 	git pull
 	source .bashrc
+}
+
+cd
+git fetch origin
+if [ $(git rev-parse HEAD) != $(git rev-parse @{u}) ]; then
+	pullBashrc &
 else
 	commitBashrc > /dev/null 2>&1 & 
 fi

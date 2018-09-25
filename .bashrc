@@ -150,6 +150,7 @@ function commitBashrc(){
 	git add .bash_aliases
 	git commit -m $(date +%x_%H:%M) > /dev/null
 	git push > /dev/null
+	exit
 }
 
 git fetch origin
@@ -158,7 +159,7 @@ if [ $(git rev-parse HEAD) != $(git rev-parse @{u}) ]; then
 	git pull
 	source .bashrc
 else
-	commitBashrc & > /dev/null 
+	commitBashrc & 
 fi
 
 if [ -f "$HOME"/.bash_aliases ]; then

@@ -144,16 +144,22 @@ agent_start () {
     . "$env" >| /dev/null ; }
 
 agent_load_env
-if [ -f "$HOME"/.bash_aliases ]; then
-	. "$HOME"/.bash_aliases
-	echo '.bash_aliases sourced'
-fi
 
 git fetch origin
 if [ $(git rev-parse HEAD) != $(git rev-parse @{u}) ]; then
 	echo "getting latest config files"
 	git pull
 	source .bashrc
+else 
+	git add .bashrc
+	git add .bash_aliases
+	git commit -m $(date +%x_%H:%M:%S:%N)
+	git push
+fi
+
+if [ -f "$HOME"/.bash_aliases ]; then
+	. "$HOME"/.bash_aliases
+	echo '.bash_aliases sourced'
 fi
 
 echo '.bashrc sourced' 

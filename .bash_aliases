@@ -15,6 +15,7 @@ alias cdrl='cd /mnt/c/Users/Caden/Desktop/RL-Insider'
 alias gp='git push'
 alias gc='gitcommit'
 alias gm='gitmerge'
+alias gpl='git fetch;git pull'
 alias gch='git checkout'
 alias glg='git log --pretty=format:"%C(reset)%h %ad%C(yellow bold)%d %Creset %C(cyan bold)%s" --decorate --date=short'
 

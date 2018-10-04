@@ -122,6 +122,12 @@ function gitcommit(){
 function gitmerge(){
 	git merge "$*"
 }
+function gitpush() {
+	git push "$*"
+}
+function gitremote(){
+	git remote add origin git@github.com:cadenpopps/"$*".git
+}
 function cppcompile(){
 	g++ -o output "$*"
 }
@@ -130,9 +136,6 @@ function cppcompilerun(){
 }
 function cpprun(){
 	./"$*"
-}
-function gitpush() {
-	git push "$*"
 }
 
 env=~/.ssh/agent.env

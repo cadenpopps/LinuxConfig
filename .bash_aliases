@@ -12,7 +12,7 @@ alias cds='cd /mnt/c/Users/Caden/Desktop/site'
 alias cdp='cd /mnt/c/Users/Caden/Desktop/python'
 alias cdrl='cd /mnt/c/Users/Caden/Desktop/RL-Insider'
 
-alias txpack='~/usr/share/texlive/texmf-dist/tex/latex'
+alias txpack='/usr/share/texlive/texmf-dist/tex/latex'
 alias cdtxp='cd txpack'
 
 alias gp='git push'

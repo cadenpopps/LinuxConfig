@@ -15,6 +15,8 @@ alias cdrl='cd /mnt/c/Users/Caden/Desktop/RL-Insider'
 alias txpack='/usr/share/texlive/texmf-dist/tex/latex'
 alias cdtxp='cd txpack'
 
+alias pdf='pdflatex'
+
 alias gp='git push'
 alias gc='gitcommit'
 alias gm='gitmerge'

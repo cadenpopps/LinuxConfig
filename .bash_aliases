@@ -6,6 +6,12 @@ alias sbrc='source ~/.bashrc;cbrc'
 alias pbrc='pullBashrc'
 alias cbrc='commitBashrc'
 
+alias l='ls --format=vertical'
+alias ls='ls -a -p --format=single-column --color=never'
+alias lss='ls --format=single-column -s --block-size=k'
+alias ll='ls -a -t --format=verbose -s --block-size=k'
+alias lsr='ls -R'
+
 alias cdd='cd /mnt/c/Users/Caden/Desktop'
 alias cdc='cd /mnt/c/Users/Caden/Desktop/cpp'
 alias cds='cd /mnt/c/Users/Caden/Desktop/site'

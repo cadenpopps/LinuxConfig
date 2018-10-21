@@ -36,3 +36,5 @@ alias cppr='cpprun'
 alias cppcr='cppcompilerun'
 
 alias pr='python '
+
+alias brightness='sudo xbacklight '

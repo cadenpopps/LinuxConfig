@@ -134,9 +134,4 @@ if [ -f "$HOME"/.bash_aliases ]; then
 	echo '.bash_aliases sourced'
 fi
 
-if [ -f "$HOME"/.inputrc ]; then
-	. "$HOME"/.inputrc
-	echo '.inputrc sourced'
-fi
-
 echo '.bashrc sourced' 

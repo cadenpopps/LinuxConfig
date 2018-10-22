@@ -135,7 +135,7 @@ if [ -f "$HOME"/.bash_aliases ]; then
 fi
 
 bind 'TAB':menu-complete
-bind "set show-all-if-ambigous on"
+bind "set show-all-if-ambiguous on"
 bind "set menu-complete-display-prefix on"
 
 echo '.bashrc sourced' 

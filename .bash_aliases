@@ -2,6 +2,7 @@
 alias x='exit'
 
 alias bg='feh --bg-max --randomize --no-fehbg ~/Images/wallpapers/*'
+alias brightness='sudo xbacklight '
 
 alias ehttpd='cd /mnt/c/Apache24/conf;code httpd.conf;'
 alias eba='vim ~/.bash_aliases'
@@ -41,4 +42,3 @@ alias cppcr='cppcompilerun'
 
 alias pr='python '
 
-alias brightness='sudo xbacklight '

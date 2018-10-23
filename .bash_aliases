@@ -1,6 +1,8 @@
 
 alias x='exit'
 
+alias bg='feh --bg-max --randomize --no-fehbg ~/Images/wallpapers/*'
+
 alias ehttpd='cd /mnt/c/Apache24/conf;code httpd.conf;'
 alias eba='vim ~/.bash_aliases'
 alias ebrc='vim ~/.bashrc'

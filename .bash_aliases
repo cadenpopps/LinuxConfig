@@ -2,7 +2,7 @@
 alias x='exit'
 alias ox='openbox --exit'
 
-alias neofetch='neofetch --color_blocks off --colors 216 216'
+alias neofetch='neofetch --color_blocks off --colors 216 216 14 14 14 14 --ascii_colors 216 216 217'
 
 alias bg='feh --bg-max --randomize --no-fehbg ~/Images/wallpapers/*'
 alias brightness='sudo xbacklight '

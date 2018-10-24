@@ -7,7 +7,9 @@ alias neofetch='neofetch --color_blocks off --colors 216 216 237 --ascii_colors 
 alias bg='feh --bg-max --randomize --no-fehbg ~/Images/wallpapers/*'
 alias brightness='sudo xbacklight '
 alias volume='pulseaudio-ctl set '
-alias mute='pulseaudio-ctl mute'
+alias mute='pulseaudio-ctl mute-input'
+alias volup='pulseaudio-ctl up'
+alias voldown='pulseaudio-ctl down'
 
 alias ehttpd='cd /mnt/c/Apache24/conf;code httpd.conf;'
 alias eba='vim ~/.bash_aliases'

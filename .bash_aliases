@@ -4,6 +4,8 @@ alias ox='openbox --exit'
 
 alias arch='neofetch --color_blocks off --colors 216 216 237 --ascii_colors 216 216'
 
+alias applist='cat ~/Documents/applist'
+
 alias bg='feh --bg-max --randomize --no-fehbg ~/Images/wallpapers/*'
 alias brightness='sudo xbacklight '
 alias volume='pulseaudio-ctl set '

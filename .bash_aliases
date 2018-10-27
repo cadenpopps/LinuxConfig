@@ -9,7 +9,7 @@ alias applist='cat ~/Documents/applist'
 alias bg='feh --bg-max --randomize --no-fehbg ~/Images/wallpapers/*'
 alias brightness='sudo xbacklight '
 alias volume='pulseaudio-ctl set '
-alias mute='pulseaudio-ctl mute-input'
+alias mute='pulseaudio-ctl mute'
 alias volup='pulseaudio-ctl up'
 alias voldown='pulseaudio-ctl down'
 

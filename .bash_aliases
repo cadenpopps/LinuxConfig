@@ -7,7 +7,7 @@ alias arch='neofetch --color_blocks off --colors #bebeef --ascii_colors #db8876
 
 alias applist='cat ~/Documents/applist'
 
-alias bg='feh --bg-max --randomize --no-fehbg ~/Images/wallpapers/*'
+alias bg='feh --bg-max --randomize --no-fehbg ~/images/wallpapers/*'
 alias brightness='sudo xbacklight '
 alias volume='pulseaudio-ctl set '
 alias mute='pulseaudio-ctl mute'

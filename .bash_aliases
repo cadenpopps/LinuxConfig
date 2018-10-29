@@ -1,7 +1,7 @@
 
 alias x='exit'
 alias ox='openbox --exit'
-alias lock='. /scripts/i3lock.sh'
+alias lock='. ~/scripts/i3lock.sh'
 
 alias arch='neofetch --color_blocks off --colors #bebeef --ascii_colors #db8876
 #db8876 #db8876 #db8876 #db8876'

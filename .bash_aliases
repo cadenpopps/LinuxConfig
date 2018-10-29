@@ -2,7 +2,7 @@
 alias x='exit'
 alias ox='openbox --exit'
 
-alias arch='neofetch --color_blocks off --colors #db8876 #db8876 --ascii_colors #db8876 #db8876'
+alias arch='neofetch --color_blocks off --colors #db8876 #db8876 0 0 0 --ascii_colors #db8876 #db8876 0 0 0 0'
 
 alias applist='cat ~/Documents/applist'
 

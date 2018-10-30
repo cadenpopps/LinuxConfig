@@ -3,7 +3,7 @@ alias x='exit'
 alias ox='openbox --exit'
 alias lock='. ~/scripts/i3lock.sh'
 
-alias arch='neofetch --color_blocks off --ascii_colors #fccfc6 #fccfc6 #fccfc6 #fccfc6 #fccfc6 #fccfc6'
+alias arch='neofetch --color_blocks off --ascii_colors #fccfc6 #fccfc6 #fccfc6 #fccfc6 #fccfc6 #fccfc6
 
 alias applist='cat ~/Documents/applist'
 

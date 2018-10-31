@@ -3,9 +3,10 @@ alias x='exit'
 alias ox='openbox --exit'
 alias lock='. ~/scripts/i3lock.sh'
 
-alias arch='neofetch --color_blocks off --ascii_colors #fccfc6 #fccfc6 #fccfc6 #fccfc6 #fccfc6 #fccfc6
+alias arch='neofetch --color_blocks off --ascii_colors #fccfc6 #fccfc6 #fccfc6 #fccfc6 #fccfc6 #fccfc6'
 
-alias applist='cat ~/Documents/applist'
+alias applist='cat ~/documents/applist'
+alias colorlist='cat ~/documents/colors'
 
 alias bg='feh --bg-max --randomize --no-fehbg ~/images/wallpapers/*'
 alias brightness='sudo xbacklight '

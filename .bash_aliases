@@ -8,7 +8,7 @@ alias arch='neofetch --color_blocks off --ascii_colors #fccfc6 #fccfc6 #fccfc6 #
 alias applist='cat ~/documents/applist'
 alias colorlist='cat ~/documents/colors'
 
-alias bg='feh --bg-max --randomize --no-fehbg ~/images/wallpapers/*'
+alias bg='. ~/scripts/bg.sh '
 alias brightness='sudo xbacklight '
 alias volume='pulseaudio-ctl set '
 alias mute='pulseaudio-ctl mute'

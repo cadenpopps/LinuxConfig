@@ -30,7 +30,7 @@ alias lsr='ls -R'
 
 alias cdd='cd /mnt/c/Users/Caden/Desktop'
 alias cdc='cd /mnt/c/Users/Caden/Desktop/cpp'
-alias cds='cd /mnt/c/Users/Caden/Desktop/site'
+alias cds='cd ~/cadenpopps.com'
 alias cdp='cd /mnt/c/Users/Caden/Desktop/python'
 alias cdrl='cd /mnt/c/Users/Caden/Desktop/RL-Insider'
 

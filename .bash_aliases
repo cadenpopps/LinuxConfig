@@ -15,7 +15,7 @@ alias mute='pulseaudio-ctl mute'
 alias volup='pulseaudio-ctl up'
 alias voldown='pulseaudio-ctl down'
 
-alias ehttpd='cd /mnt/c/Apache24/conf;code httpd.conf;'
+alias ehttpd='cd /etc/httpd/conf;code httpd.conf;'
 alias eba='vim ~/.bash_aliases'
 alias ebrc='vim ~/.bashrc'
 alias sbrc='source ~/.bashrc;cbrc'

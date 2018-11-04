@@ -15,7 +15,7 @@ alias mute='pulseaudio-ctl mute'
 alias volup='pulseaudio-ctl up'
 alias voldown='pulseaudio-ctl down'
 
-alias ehttpd='cd /etc/httpd/conf;sudo vim httpd.conf;'
+alias ehttpd='sudo vim /etc/httpd/conf/httpd.conf;'
 alias eba='vim ~/.bash_aliases'
 alias ebrc='vim ~/.bashrc'
 alias sbrc='source ~/.bashrc;cbrc'

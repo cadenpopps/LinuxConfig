@@ -14,6 +14,7 @@ alias volume='pulseaudio-ctl set '
 alias mute='pulseaudio-ctl mute'
 alias volup='pulseaudio-ctl up'
 alias voldown='pulseaudio-ctl down'
+alias screenshot='deepin-screenshot -f -s ~/images/screenshots'
 
 alias ehttpd='sudo vim /etc/httpd/conf/httpd.conf;'
 alias eba='vim ~/.bash_aliases'

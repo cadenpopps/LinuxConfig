@@ -74,7 +74,7 @@ function pullBashrc(){
 	source .bashrc
 }
 
-function ehttpd(){
+function sedhttpd(){
 	sudo sed -i 's@cadenpopps\.com.*\"@cadenpopps.com/"$*"\"@g' /etc/httpd/conf/httpd.conf
 }
 

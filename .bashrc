@@ -74,6 +74,10 @@ function pullBashrc(){
 	source .bashrc
 }
 
+function ehttpd(){
+	sudo sed -i 's@cadenpopps\.com.*\"@cadenpopps.com/"$*"\"@g' /etc/httpd/conf/httpd.conf
+}
+
 if [ -f "$HOME"/.bash_aliases ]; then
 	. "$HOME"/.bash_aliases
 	echo '.bash_aliases sourced'

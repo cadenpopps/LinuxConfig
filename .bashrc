@@ -75,7 +75,7 @@ function pullBashrc(){
 }
 
 function sedhttpd(){
-	sudo sed -i 's@cadenpopps\.com.*\"@cadenpopps.com/$*\"@g' /etc/httpd/conf/httpd.conf
+	sudo sed -i "s|cadenpopps\.com.*\"|cadenpopps.com/${*}\"|g" /etc/httpd/conf/httpd.conf
 }
 
 if [ -f "$HOME"/.bash_aliases ]; then

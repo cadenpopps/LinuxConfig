@@ -69,7 +69,6 @@ function commitBashrc(){
 	git add .bash_aliases
 	git add .gitignore
 	git commit -m $(date +%x_%H:%M)
-	git push
 }
 
 function pullBashrc(){

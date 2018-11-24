@@ -16,8 +16,6 @@ alias volup='pulseaudio-ctl up'
 alias voldown='pulseaudio-ctl down'
 alias screenshot='deepin-screenshot -f -s ~/images/screenshots'
 
-alias cdl='cdls'
-
 alias ehttpd='sedhttpd'
 alias eba='vim ~/.bash_aliases'
 alias ebrc='vim ~/.bashrc'
@@ -31,6 +29,7 @@ alias lss='ls --format=single-column -s --block-size=k'
 alias ll='ls -a -t --format=verbose -s --block-size=k'
 alias lsr='ls -R'
 
+alias cd='cdls'
 alias cdd='cd /mnt/c/Users/Caden/Desktop'
 alias cdc='cd /mnt/c/Users/Caden/Desktop/cpp'
 alias cds='cd ~/cadenpopps.com'

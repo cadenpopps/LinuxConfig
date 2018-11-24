@@ -16,6 +16,8 @@ alias volup='pulseaudio-ctl up'
 alias voldown='pulseaudio-ctl down'
 alias screenshot='deepin-screenshot -f -s ~/images/screenshots'
 
+alias cdl='cdls'
+
 alias ehttpd='sedhttpd'
 alias eba='vim ~/.bash_aliases'
 alias ebrc='vim ~/.bashrc'

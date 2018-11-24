@@ -38,6 +38,11 @@ function gitpush() {
 function gitremote(){
 	git remote add origin git@github.com:cadenpopps/"$*".git
 }
+function gitcheckout(){
+	git checkout "$*"
+	git pull
+}
+
 function cppcompile(){
 	g++ -o output "$*"
 }

@@ -47,6 +47,7 @@ alias gnew='gitremote'
 alias gpl='git fetch;git pull'
 alias gch='gitcheckout'
 alias glg='git log --pretty=format:"%C(reset)%h %ad%C(yellow bold)%d %Creset %C(cyan bold)%s" --decorate --date=short'
+alias gb='git branch'
 
 alias cppc='cppcompile'
 alias cppr='cpprun'

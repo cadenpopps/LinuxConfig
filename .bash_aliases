@@ -45,7 +45,7 @@ alias gc='gitcommit'
 alias gm='gitmerge'
 alias gnew='gitremote'
 alias gpl='git fetch;git pull'
-alias gch='git checkout'
+alias gch='gitcheckout'
 alias glg='git log --pretty=format:"%C(reset)%h %ad%C(yellow bold)%d %Creset %C(cyan bold)%s" --decorate --date=short'
 
 alias cppc='cppcompile'

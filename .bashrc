@@ -40,7 +40,7 @@ function gitremote(){
 }
 function gitcheckout(){
 	git checkout "$*"
-	git pull
+	git pull &
 }
 
 function cppcompile(){

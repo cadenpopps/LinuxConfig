@@ -50,7 +50,7 @@ function cppcompilerun(){
 	cppc "$*"; cppr output
 }
 function cpprun(){
-	"$*"
+	./"$*"
 }
 
 function cdls(){

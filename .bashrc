@@ -44,7 +44,7 @@ function gitcheckout(){
 }
 
 function cppcompile(){
-	g++ -o output "$*"
+	gpp -o output "$*"
 }
 function cppcompilerun(){
 	cppc "$*"; cppr output

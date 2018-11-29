@@ -44,7 +44,7 @@ function gitcheckout(){
 }
 
 function cppcompile(){
-	g++ "$*" -lstdc++ -o output.o
+	g++ *.cpp -lstdc++ -o output.o
 }
 function cppcompilerun(){
 	cppc "$*"; cppr output.o

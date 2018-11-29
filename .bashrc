@@ -129,7 +129,7 @@ function gitremote(){
 	git remote add origin git@github.com:cadenpopps/"$*".git
 }
 function cppcompile(){
-	g++ *.cpp -l --std=c++11 -o output.o
+	g++ *.cpp -l --std=c++14 -o output.o
 }
 function cppcompilerun(){
 	cppc "$*"; cppr output.o

@@ -44,10 +44,10 @@ function gitcheckout(){
 }
 
 function cppcompile(){
-	g++ "$*" -lstdc++ -o output
+	g++ "$*" -lstdc++ -o output.o
 }
 function cppcompilerun(){
-	cppc "$*"; cppr output
+	cppc "$*"; cppr output.o
 }
 function cpprun(){
 	./"$*"

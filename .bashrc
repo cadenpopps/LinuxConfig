@@ -40,7 +40,6 @@ function gitremote(){
 }
 function gitcheckout(){
 	git checkout "$*"
-	git pull > /dev/null 2>&1 &
 }
 
 function cppcompile(){

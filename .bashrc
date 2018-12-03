@@ -46,7 +46,7 @@ function cppcompile(){
 	g++ *.cpp -lstdc++ -o output.o
 }
 function cppcompilerun(){
-	cppc "$*"; cppr output.o
+	cppc; cppr output.o
 }
 function cpprun(){
 	./"$*"

@@ -5,6 +5,9 @@ alias lock='. ~/scripts/i3lock.sh'
 
 alias arch='neofetch --color_blocks off --ascii_colors #fccfc6 #fccfc6 #fccfc6 #fccfc6 #fccfc6 #fccfc6'
 
+alias unrar='unzip'
+alias pdf='pdflatex'
+
 alias applist='cat ~/documents/applist'
 alias colorlist='cat ~/documents/colors'
 
@@ -38,8 +41,6 @@ alias cdrl='cd /mnt/c/Users/Caden/Desktop/RL-Insider'
 
 alias txpack='/usr/share/texlive/texmf-dist/tex/latex'
 alias cdtxp='cd txpack'
-
-alias pdf='pdflatex'
 
 alias gp='git push'
 alias gc='gitcommit'

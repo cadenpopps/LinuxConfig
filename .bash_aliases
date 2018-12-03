@@ -53,6 +53,7 @@ alias gb='git branch'
 alias cppc='cppcompile'
 alias cppr='cpprun'
 alias cppcr='cppcompilerun'
+alias pcppcr='echo "g++ *.cpp -lstdc++ -o output.o"'
 
 alias pr='python'
 

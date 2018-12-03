@@ -6,6 +6,7 @@ alias lock='. ~/scripts/i3lock.sh'
 alias arch='neofetch --color_blocks off --ascii_colors #fccfc6 #fccfc6 #fccfc6 #fccfc6 #fccfc6 #fccfc6'
 
 alias pdf='pdflatex'
+alias urar='unrar e'
 
 alias applist='cat ~/documents/applist'
 alias colorlist='cat ~/documents/colors'

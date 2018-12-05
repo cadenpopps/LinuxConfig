@@ -40,10 +40,6 @@ function gitremote(){
 }
 function gitcheckout(){
 	git checkout "$*"
-<<<<<<< HEAD
-=======
-	git pull > /dev/null 2>&1 &
->>>>>>> 0cdf330fa246f098fdde955b00e26b23467625ad
 }
 
 function cppcompile(){
@@ -51,7 +47,6 @@ function cppcompile(){
 }
 function cppcompilerun(){
 	cppc; cppr output.o
->>>>>>> linux
 }
 function cpprun(){
 	./"$*"

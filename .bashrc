@@ -52,6 +52,10 @@ function cpprun(){
 	./"$*"
 }
 
+function codeopen(){
+	code "$*" &
+}
+
 function cdls(){
 	cd "$*"
 	ls

@@ -18,6 +18,7 @@ alias mute='pulseaudio-ctl mute'
 alias volup='pulseaudio-ctl up'
 alias voldown='pulseaudio-ctl down'
 alias screenshot='deepin-screenshot -f -s ~/images/screenshots'
+alias code='codeopen'
 
 alias ehttpd='sedhttpd'
 alias eba='vim ~/.bash_aliases'

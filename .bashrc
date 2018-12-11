@@ -87,9 +87,14 @@ function pullBashrc(){
 }
 
 function sedhttpd(){
-	sudo sed -i "s|cadenpopps\.com.*\"|cadenpopps.com/${*}\"|g" ~/.config/apache/httpd.conf
-	#/etc/httpd/conf/httpd.conf
-	sudo httpd -k restart	
+	if [ -f ~/.config/apache/httpd.conf ]; then
+		sudo sed -i "s|cadenpopps\.com.*\"|cadenpopps.com/${*}\"|g" ~/.config/apache/httpd.conf
+		sudo httpd -k restart	
+	fi
+	if [ -f /etc/apache2/sites-enabled/000-default.conf ]; then
+		sudo sed -i "s|cadenpopps\.com.*\"|cadenpopps.com/${*}\"|g" /etc/apache2/sites-enabled/000-default.conf
+		sudo service apache2 restart
+	fi	
 }
 
 if [ -f "$HOME"/.bash_aliases ]; then

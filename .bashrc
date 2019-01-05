@@ -97,10 +97,18 @@ function sedhttpd(){
 	fi	
 }
 
+
+if [ -f "$HOME"/.vars ]; then
+	. "$HOME"/.vars
+	echo '.vars sourced'
+fi
+
 if [ -f "$HOME"/.bash_aliases ]; then
 	. "$HOME"/.bash_aliases
 	echo '.bash_aliases sourced'
 fi
+
+if
 
 bind 'TAB':menu-complete
 bind "set show-all-if-ambiguous on"

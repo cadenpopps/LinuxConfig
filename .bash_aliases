@@ -37,7 +37,7 @@ alias lsr='ls -R'
 alias cdl='cdls'
 alias cdd='cd /mnt/c/Users/Caden/Desktop'
 alias cdc='cd /mnt/c/Users/Caden/Desktop/cpp'
-alias cds='cd $_SITE;echo;ls;echo;git branch'
+alias cds='cd $_SITE;echo;git branch;echo'
 alias cdp='cd /mnt/c/Users/Caden/Desktop/python'
 alias cdrl='cd /mnt/c/Users/Caden/Desktop/RL-Insider'
 

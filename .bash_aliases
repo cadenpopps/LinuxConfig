@@ -13,7 +13,7 @@ alias applist='cat ~/documents/applist'
 alias colorlist='cat ~/documents/colors'
 
 alias bg='. ~/scripts/bg'
-alias brightness='sudo xbacklight '
+alias brightness='sudo xbacklight set '
 alias volume='pulseaudio-ctl set '
 alias mute='pulseaudio-ctl mute'
 alias volup='pulseaudio-ctl up'

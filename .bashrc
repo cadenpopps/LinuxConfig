@@ -88,7 +88,7 @@ function pullBashrc(){
 
 function sedhttpd(){
 	if [ -f $_HTTPD ]; then
-		if [ "$1" = "dungeon/" ] then
+		if [ "$1" = "dungeon\/" ] then
 			sudo sed -i "s|cadenpopps\/.*\"|cadenpopps\/$1\"|g" $_HTTPD
 		else 
 			sudo sed -i "s|cadenpopps\/.*\"|cadenpopps\/cadenpopps.com\/$1\"|g" $_HTTPD

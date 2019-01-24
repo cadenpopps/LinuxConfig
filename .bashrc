@@ -93,7 +93,7 @@ function sedhttpd(){
 	fi
 }
 
-function sedhttdp_site(){
+function sedhttpd_site(){
 	sedhttpd "cadenpopps.com\/$1"
 }
 

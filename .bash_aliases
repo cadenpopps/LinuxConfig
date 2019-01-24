@@ -23,7 +23,7 @@ alias code='codeopen'
 alias workmode='. ~/scripts/workmode.sh'
 alias normalmode='. ~/scripts/normalmode.sh'
 
-alias ehttpd='sedhttpd '
+alias ehttpd='sedhttpd_site '
 alias ehttpdd='sedhttpd "dungeon/"'
 alias eba='vim ~/.bash_aliases'
 alias ebrc='vim ~/.bashrc'

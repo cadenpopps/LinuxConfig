@@ -88,15 +88,14 @@ function pullBashrc(){
 
 function sedhttpd(){
 	if [ -f $_HTTPD ]; then
-		if [ "$1" = "dungeon\/" ] then
-			sudo sed -i "s|cadenpopps\/.*\"|cadenpopps\/$1\"|g" $_HTTPD
-		else 
-			sudo sed -i "s|cadenpopps\/.*\"|cadenpopps\/cadenpopps.com\/$1\"|g" $_HTTPD
-		fi		
+		sudo sed -i "s|cadenpopps\/.*\"|cadenpopps\/$1\"|g" $_HTTPD
 		$($_HTTPD_RESTART)
 	fi
 }
 
+function sedhttdp_site(){
+	sedhttpd "cadenpopps.com\/$1"
+}
 
 if [ -f "$HOME"/.vars ]; then
 	. "$HOME"/.vars

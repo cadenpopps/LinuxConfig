@@ -13,7 +13,7 @@ alias applist='cat ~/documents/applist'
 alias colorlist='cat ~/documents/colors'
 
 alias bg='. ~/scripts/bg'
-alias brightness='pkexec brillo -S '
+alias brightness='pkexec brillo -u 10000 -S '
 alias volume='pulseaudio-ctl set '
 alias mute='pulseaudio-ctl mute'
 alias volup='pulseaudio-ctl up'

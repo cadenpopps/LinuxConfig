@@ -43,6 +43,7 @@ alias cdc='cd /mnt/c/Users/Caden/Desktop/cpp'
 alias cds='cd $_SITE;echo;git branch;echo'
 alias cdp='cd /mnt/c/Users/Caden/Desktop/python'
 alias cdrl='cd /mnt/c/Users/Caden/Desktop/RL-Insider'
+alias cddu='cd $_DUNGEON;echo;git branch;echo'
 
 alias txpack='/usr/share/texlive/texmf-dist/tex/latex'
 alias cdtxp='cd txpack'

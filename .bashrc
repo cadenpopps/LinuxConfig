@@ -37,7 +37,7 @@ function gitpush() {
 }
 function gitcommitpush(){
 	gitcommit "$*"
-	gitpush
+	gp
 }
 function gitremote(){
 	git remote add origin git@github.com:cadenpopps/"$*".git

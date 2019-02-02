@@ -50,6 +50,7 @@ alias cdtxp='cd txpack'
 
 alias gp='git push'
 alias gc='gitcommit'
+alias gcp='gitcommitpush'
 alias gm='gitmerge'
 alias gnew='gitremote'
 alias gpl='git fetch;git pull'

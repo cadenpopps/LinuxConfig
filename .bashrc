@@ -35,6 +35,10 @@ function gitmerge(){
 function gitpush() {
 	git push "$*"
 }
+function gitcommitpush(){
+	gitcommit "$*"
+	gitpush
+}
 function gitremote(){
 	git remote add origin git@github.com:cadenpopps/"$*".git
 }

@@ -49,6 +49,7 @@ alias txpack='/usr/share/texlive/texmf-dist/tex/latex'
 alias cdtxp='cd txpack'
 
 alias gp='git push'
+alias gpu='git push -u origin HEAD'
 alias gc='gitcommit'
 alias gcp='gitcommitpush'
 alias gm='gitmerge'

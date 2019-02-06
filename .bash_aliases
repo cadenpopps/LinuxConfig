@@ -33,7 +33,7 @@ alias cbrc='commitBashrc'
 
 alias l='ls --format=vertical'
 alias ls='ls -a -p --group-directories-first'
-alias lsize='ls --format=single-column -s --block-size=k'
+alias lsize='ls --format=single-column -s --block-size=m'
 alias lall='ls -a -t --format=verbose -s --block-size=k'
 
 alias cdl='cdls'

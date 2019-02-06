@@ -33,9 +33,8 @@ alias cbrc='commitBashrc'
 
 alias l='ls --format=vertical'
 alias ls='ls -a -p --group-directories-first'
-alias lss='ls --format=single-column -s --block-size=k'
-alias ll='ls -a -t --format=verbose -s --block-size=k'
-alias lsr='ls -R'
+alias lsize='ls --format=single-column -s --block-size=k'
+alias lall='ls -a -t --format=verbose -s --block-size=k'
 
 alias cdl='cdls'
 alias cdd='cd /mnt/c/Users/Caden/Desktop'

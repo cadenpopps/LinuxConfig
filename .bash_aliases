@@ -32,7 +32,7 @@ alias sbrc='source ~/.bashrc;cbrc'
 alias pbrc='pullBashrc'
 alias cbrc='commitBashrc'
 
-alias customLS='ls -a -p --group-directories-first --color-output=always'
+alias customLS='ls -a -p --group-directories-first --color=always'
 alias l='ls --format=vertical'
 alias ls='customLS'
 alias lsize='ls --format=single-column -s --block-size=m'

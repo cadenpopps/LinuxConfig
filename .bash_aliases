@@ -31,7 +31,7 @@ alias sbrc='source ~/.bashrc;cbrc'
 alias pbrc='pullBashrc'
 alias cbrc='commitBashrc'
 
-alias l='ls --format=vertical'
+alias l='l --format=vertical'
 alias ls='ls -a -p --group-directories-first'
 alias lsize='ls --format=single-column -s --block-size=m'
 alias lall='ls -a -t --format=verbose -s --block-size=k'

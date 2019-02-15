@@ -15,7 +15,7 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
-PS1='${debian_chroot:+($debian_chroot)}\[\033[38;2;190;190;239m[\w]\[\033[38;2;252;207;198m\] '
+PS1='${debian_chroot:+($debian_chroot)}\[\033[38;2;190;190;239m[\w]\[\033[38;2;252;207;198m '
 
 unset color_prompt force_color_prompt
 

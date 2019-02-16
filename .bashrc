@@ -68,9 +68,7 @@ agent_load_env
 
 function commitBashrc(){
 	cd
-	git add .bashrc
-	git add .bash_aliases
-	git add .gitignore
+	git add .
 	git commit -m $(date +%x_%H:%M)
 }
 

@@ -18,3 +18,6 @@ set hlsearch "highlight search results
 set gdefault "global by default
 
 set virtualedit+=block
+
+
+colorscheme cadenpopps

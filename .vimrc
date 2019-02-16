@@ -21,8 +21,8 @@ set hlsearch "highlight search results
 set gdefault "global by default
 
 "Navigation
-set nnoremap j gj
-set nnoremap k gk
+nnoremap j gj
+nnoremap k gk
 
 set virtualedit+=block
 

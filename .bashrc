@@ -92,19 +92,6 @@ function sedhttpd_site(){
 	sedhttpd "cadenpopps.com\/$1"
 }
 
-if [ -f "$HOME"/.vars ]; then
-	. "$HOME"/.vars
-	echo '.vars sourced'
-fi
-
-if [ -f "$HOME"/.bash_aliases ]; then
-	. "$HOME"/.bash_aliases
-	echo '.bash_aliases sourced'
-fi
-
 bind 'TAB':menu-complete
 bind "set show-all-if-ambiguous on"
 bind "set menu-complete-display-prefix on"
-
-echo '.bashrc sourced' 
-

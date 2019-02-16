@@ -31,6 +31,7 @@ alias ebrc='vim ~/.bashrc'
 alias sbrc='source ~/.bashrc;cbrc'
 alias pbrc='pullBashrc'
 alias cbrc='commitBashrc'
+alias evrc='vim ~/.vimrc'
 
 alias customLS='ls -a -p --group-directories-first --color=always'
 alias l='ls --format=vertical'

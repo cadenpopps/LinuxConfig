@@ -11,10 +11,6 @@ HISTFILESIZE=8000
 
 shopt -s checkwinsize
 
-if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
-    debian_chroot=$(cat /etc/debian_chroot)
-fi
-
 PS1='\033[38;2;190;190;239m[\w]\[\033[38;2;252;207;198m '
 
 unset color_prompt force_color_prompt

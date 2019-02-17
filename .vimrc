@@ -1,6 +1,7 @@
 
 syntax on
 set noswapfile "remove swapfile
+set nocompatible
 set number
 set ttyfast
 

@@ -5,8 +5,11 @@ set nocompatible
 set number
 set ttyfast
 
+
+set runtimepath^=~/.vim/pack/nerdtree/	
+autocmd vimenter * NERDTree
 "NERDTree
-autocmd VimEnter * NERDTree
+"autocmd VimEnter * NERDTree
 
 "Indent/tab stuff
 set tabstop=4

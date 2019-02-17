@@ -8,8 +8,7 @@ set ttyfast
 
 set runtimepath^=~/.vim/pack/nerdtree/	
 autocmd vimenter * NERDTree
-"NERDTree
-"autocmd VimEnter * NERDTree
+noremap <C-b> <Esc>:NERDTree<CR>
 
 "Indent/tab stuff
 set tabstop=4

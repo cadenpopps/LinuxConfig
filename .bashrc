@@ -98,6 +98,7 @@ if [ -f "$HOME"/.bash_aliases ]; then
 	. "$HOME"/.bash_aliases
 fi
 
+setxkbmap -option caps:swapescape
 bind 'TAB':menu-complete
 bind "set show-all-if-ambiguous on"
 bind "set menu-complete-display-prefix on"

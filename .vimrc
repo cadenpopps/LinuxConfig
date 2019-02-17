@@ -5,6 +5,9 @@ set nocompatible
 set number
 set ttyfast
 
+"NERDTree
+autocmd VimEnter * NERDTree
+
 "Indent/tab stuff
 set tabstop=4
 set shiftwidth=4

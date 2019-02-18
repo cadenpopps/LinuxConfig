@@ -99,7 +99,7 @@ if [ -f "$HOME"/.bash_aliases ]; then
 fi
 
 if [ -d "$HOME"/shared/ ]; then
-	rsync -r -e ssh norm@192.168.0.50:/home/norm/shared/ ~/shared/ & >/dev/null
+	rsync -r -e ssh norm@192.168.0.50:/home/norm/shared/ ~/shared/ &>/dev/null
 fi
 
 setxkbmap -option caps:swapescape

@@ -5,8 +5,8 @@ set number
 set numberwidth=7
 set ttyfast
 
-"Plugins
-
+""Plugins
+filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -22,6 +22,7 @@ filetype plugin indent on
 
 
 "Plugin Config
+
 "NERDTree
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 noremap <C-b> <Esc>:NERDTreeToggle<CR>

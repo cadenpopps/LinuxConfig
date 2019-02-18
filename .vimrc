@@ -3,11 +3,20 @@ syntax on
 set noswapfile "remove swapfile
 set nocompatible
 set number
+set numberwidth=5
 set ttyfast
 
 
+nmap <C-S-e> :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+  if !exists("*synstack")
+    return
+  endif
+  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
+
 set runtimepath^=~/.vim/pack/nerdtree/	
-"autocmd vimenter * NERDTree
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 noremap <C-b> <Esc>:NERDTree<CR>
 
 "Indent/tab stuff

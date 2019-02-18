@@ -7,7 +7,7 @@ set ttyfast
 
 
 set runtimepath^=~/.vim/pack/nerdtree/	
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
 noremap <C-b> <Esc>:NERDTree<CR>
 
 "Indent/tab stuff

@@ -1,25 +1,64 @@
-
-syntax on
-set noswapfile "remove swapfile
+syntax enable
+set noswapfile
 set nocompatible
 set number
-set numberwidth=5
+set numberwidth=7
 set ttyfast
 
+"Plugins
 
-nmap <C-S-e> :call <SID>SynStack()<CR>
-function! <SID>SynStack()
-  if !exists("*synstack")
-    return
-  endif
-  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
-endfunc
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-set runtimepath^=~/.vim/pack/nerdtree/	
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'junegunn/goyo.vim'
+Plugin 'junegunn/fzf.vim'
+
+call vundle#end() 
+filetype plugin indent on
+
+"End Plugins
+
+
+"Plugin Config
+"NERDTree
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-noremap <C-b> <Esc>:NERDTree<CR>
+noremap <C-b> <Esc>:NERDTreeToggle<CR>
+let NERDTreeShowLineNumbers=0
+let NERDTreeShowHidden=1
+"Goyo
+nnoremap <C-z> :Goyo <bar> highlight StatusLineNC ctermfg=white <CR>
 
-"Indent/tab stuff
+
+"Keybindings
+nnoremap <Leader>n :edit ~/shared/notes/
+noremap <C-s> <Esc>:w<CR>
+noremap <C-x> <Esc>:x<CR>
+noremap <C-q> <Esc>:q!<CR>
+noremap <C-p> <Esc>:Files<CR>
+noremap <C-t> <Esc>gg=G <C-o><C-o>
+
+
+"Color Config Mappings
+inoremap ,lb 189
+inoremap ,lg 102
+inoremap ,dg 59
+inoremap ,lo 224
+inoremap ,do 174
+inoremap ,r 160
+
+
+"Split config
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+set splitbelow
+set splitright
+
+
+"Spacing
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -44,5 +83,14 @@ nnoremap k gk
 
 set virtualedit+=block
 
-colorscheme cadenpopps
 
+"Check element
+nmap <C-S-e> :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+	if !exists("*synstack")
+		return
+	endif
+	echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
+
+colorscheme cadenpopps

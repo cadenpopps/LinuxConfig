@@ -63,27 +63,41 @@ hi Typedef ctermfg=174 ctermbg=NONE cterm=NONE
 "Editor
 hi MatchParen ctermfg=NONE ctermbg=224 cterm=NONE
 hi Cursor ctermfg=238 ctermbg=224 cterm=NONE
-hi VertSplit ctermfg=250 ctermbg=102 cterm=NONE
+hi VertSplit ctermfg=189 ctermbg=NONE cterm=NONE
 hi Visual ctermfg=255 ctermbg=102 cterm=NONE
 hi FoldColumn ctermfg=224 ctermbg=236 cterm=NONE
-hi StatusLineNC ctermfg=250 ctermbg=102 cterm=NONE
+hi StatusLineNC ctermfg=NONE ctermbg=NONE cterm=NONE
+hi StatusLine ctermfg=189 ctermbg=NONE cterm=NONE
 hi WildMenu ctermfg=255 ctermbg=61 cterm=NONE
 hi Folded ctermfg=252 ctermbg=54 cterm=NONE
 hi CursorLine ctermfg=NONE ctermbg=NONE cterm=NONE
 hi Error ctermfg=255 ctermbg=160 cterm=NONE
+hi EndOfBuffer ctermfg=NONE ctermbg=NONE cterm=NONE
+
+"NerdTree
+hi NERDTreeHelp ctermfg=102 ctermbg=NONE cterm=NONE
+hi NERDTreeCWD ctermfg=174 ctermbg=NONE cterm=NONE
+hi NERDTreeUp ctermfg=102 ctermbg=NONE cterm=NONE
+hi NERDTreeDir ctermfg=189 ctermbg=NONE cterm=NONE
+hi NERDTreeDirSlash ctermfg=189 ctermbg=NONE cterm=NONE
+hi NERDTreeClosable ctermfg=189 ctermbg=NONE cterm=NONE
+hi NERDTreeOpenable ctermfg=189 ctermbg=NONE cterm=NONE
+hi NERDTreeFile ctermfg=224 ctermbg=NONE cterm=NONE
+hi NERDTreeExecFile ctermfg=224 ctermbg=NONE cterm=NONE
+
 
 "Diffs
 
 hi PreCondit ctermfg=174 ctermbg=NONE cterm=NONE
 hi Include ctermfg=66 ctermbg=NONE cterm=NONE
-hi NonText ctermfg=224 ctermbg=NONE cterm=NONE
+hi NonText ctermfg=NONE ctermbg=NONE cterm=NONE
 hi DiffText ctermfg=230 ctermbg=239 cterm=NONE
 hi ErrorMsg ctermfg=15 ctermbg=167 cterm=NONE
 hi vimBracket ctermfg=174 ctermbg=NONE cterm=NONE
 hi vimOpenParen ctermfg=174 ctermbg=NONE cterm=NONE
 hi vimParenSep ctermfg=174 ctermbg=NONE cterm=NONE
 hi Todo ctermfg=102 ctermbg=189 cterm=NONE
-hi StatusLine ctermfg=250 ctermbg=102 cterm=NONE
+hi StatusLine ctermfg=189 ctermbg=NONE cterm=NONE
 hi PMenuSel ctermfg=174 ctermbg=238 cterm=NONE
 hi Delimiter ctermfg=176 ctermbg=NONE cterm=NONE
 hi WarningMsg ctermfg=15 ctermbg=174 cterm=NONE
@@ -94,7 +108,7 @@ hi PreProc ctermfg=174 ctermbg=NONE cterm=NONE
 hi MoreMsg ctermfg=103 ctermbg=NONE cterm=NONE
 hi Exception ctermfg=189 ctermbg=NONE cterm=NONE
 hi DiffChange ctermfg=230 ctermbg=24 cterm=NONE
-hi PMenu ctermfg=224 ctermbg=102 cterm=NONE
+hi PMenu ctermfg=224 ctermbg=NONE cterm=NONE
 hi SpecialKey ctermfg=135 ctermbg=NONE cterm=NONE
 hi PMenuThumb ctermfg=255 ctermbg=61 cterm=NONE
 hi Repeat ctermfg=174 ctermbg=NONE cterm=NONE
@@ -117,7 +131,5 @@ hi user2 ctermfg=103 ctermbg=102 cterm=NONE
 hi doxygenspecialmultilinedesc ctermfg=130 ctermbg=NONE cterm=NONE
 hi taglisttagname ctermfg=224 ctermbg=NONE cterm=NONE
 hi doxygenbrief ctermfg=215 ctermbg=NONE cterm=NONE
-hi mbevisiblenormal ctermfg=252 ctermbg=102 cterm=NONE
-hi user1 ctermfg=48 ctermbg=102 cterm=NONE
 hi doxygenspecialonelinedesc ctermfg=130 ctermbg=NONE cterm=NONE
 hi cspecialcharacter ctermfg=176 ctermbg=238 cterm=NONE

@@ -98,8 +98,8 @@ if [ -f "$HOME"/.bash_aliases ]; then
 	. "$HOME"/.bash_aliases
 fi
 
-if [ -f "$HOME"/shared ]; then
-	rsync -e ssh norm@192.168.0.50:/home/norm/shared/ ~/shared &
+if [ -f "$HOME"/shared/ ]; then
+	rsync -e ssh norm@192.168.0.50:/home/norm/shared/ ~/shared/ &
 fi
 
 setxkbmap -option caps:swapescape

@@ -99,7 +99,6 @@ if [ -f "$HOME"/.bash_aliases ]; then
 fi
 
 if [ -d "$HOME"/shared/ ]; then
-	echo "TEST"
 	rsync -r -e ssh norm@192.168.0.50:/home/norm/shared/ ~/shared/ &
 fi
 

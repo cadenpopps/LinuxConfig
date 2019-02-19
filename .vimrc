@@ -83,6 +83,9 @@ nnoremap k gk
 
 set virtualedit+=block
 
+"Tags
+set tags=tags;/,.tags;/
+
 
 "Check element
 nmap <C-S-e> :call <SID>SynStack()<CR>

@@ -38,7 +38,9 @@ noremap <C-s> <Esc>:w<CR>
 noremap <C-x> <Esc>:x<CR>
 noremap <C-q> <Esc>:q!<CR>
 noremap <C-p> <Esc>:Files<CR>
-noremap <C-t> <Esc>gg=G <C-o><C-o>
+noremap <C-t> <Esc>20j<S-v>40k=20j
+inoremap <C-t> <Esc>20j<S-v>40k=20j
+noremap <Leader>t <Esc>gg=G <C-o><C-o>
 
 
 "Color Config Mappings

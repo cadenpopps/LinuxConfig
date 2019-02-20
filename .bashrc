@@ -11,7 +11,7 @@ HISTFILESIZE=8000
 
 shopt -s checkwinsize
 
-PS1='\033[38;2;190;190;239m[\w]\[$(tput sgr0)\033[38;2;252;207;198m ';
+PS1='\[\033[38;2;190;190;239m\][\w]\[$(tput sgr0)\033[38;2;252;207;198m ';
 
 unset color_prompt force_color_prompt
 

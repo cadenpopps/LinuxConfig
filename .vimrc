@@ -24,7 +24,7 @@ filetype plugin indent on
 "Plugin Config
 
 "NERDTree
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 noremap <C-b> <Esc>:NERDTreeToggle<CR>
 let NERDTreeShowLineNumbers=0
 let NERDTreeShowHidden=1
@@ -85,6 +85,9 @@ nnoremap j gj
 nnoremap k gk
 
 set virtualedit+=block
+
+"Tags
+set tags=tags;/,.tags;/
 
 
 "Check element

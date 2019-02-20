@@ -10,6 +10,8 @@ alias v="vim"
 alias pdf='pdflatex'
 alias urar='unrar e'
 alias tags='ctags -Rf .tags'
+alias bp='rsync -r -e ssh ~/shared/ norm@192.168.0.50:/home/norm/shared/'
+alias bpl='rsync -r -e ssh norm@192.168.0.50:/home/norm/shared/ ~/shared/'
 
 alias applist='cat ~/documents/applist'
 alias colorlist='cat ~/documents/colors'

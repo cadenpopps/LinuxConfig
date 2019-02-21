@@ -25,7 +25,7 @@ hi Comment ctermfg=102 ctermbg=NONE cterm=NONE
 hi SpecialComment ctermfg=59 ctermbg=NONE cterm=NONE
 hi doxygencomment ctermfg=102 ctermbg=NONE cterm=NONE
 
-"Important
+"Javascript Specific
 hi javaScriptBoolean ctermfg=224 ctermbg=NONE cterm=NONE
 hi javaScriptConditional ctermfg=224 ctermbg=NONE cterm=NONE
 hi javaScriptStatement ctermfg=224 ctermbg=NONE cterm=NONE
@@ -33,6 +33,57 @@ hi javaScriptNumber ctermfg=174 ctermbg=NONE cterm=NONE
 hi javaScriptBraces ctermfg=102 ctermbg=NONE cterm=NONE
 hi javaScriptParens ctermfg=102 ctermbg=NONE cterm=NONE
 hi javaScriptFunction ctermfg=174 ctermbg=NONE cterm=NONE
+
+
+"CSS Specific
+hi cssNoise ctermfg=189 ctermbg=NONE cterm=NONE
+
+hi cssTagName ctermfg=174 ctermbg=NONE cterm=NONE
+hi cssClassName ctermfg=174 ctermbg=NONE cterm=NONE
+hi cssClassNameDot ctermfg=174 ctermbg=NONE cterm=NONE
+hi cssPseudoClass ctermfg=174 ctermbg=NONE cterm=NONE
+hi cssPseudoClassId ctermfg=174 ctermbg=NONE cterm=NONE
+hi cssAtRule ctermfg=174 ctermbg=NONE cterm=NONE
+hi cssBraces ctermfg=174 ctermbg=NONE cterm=NONE
+
+hi cssDefinition ctermfg=189 ctermbg=NONE cterm=NONE
+hi cssFontProp ctermfg=189 ctermbg=NONE cterm=NONE
+hi cssTextProp ctermfg=189 ctermbg=NONE cterm=NONE
+hi cssPositioningProp ctermfg=189 ctermbg=NONE cterm=NONE
+hi cssBoxProp ctermfg=189 ctermbg=NONE cterm=NONE
+hi cssKeyFrameProp ctermfg=189 ctermbg=NONE cterm=NONE
+hi cssMediaProp ctermfg=189 ctermbg=NONE cterm=NONE
+hi cssFlexibleBoxProp ctermfg=189 ctermbg=NONE cterm=NONE
+hi cssTransitionProp ctermfg=189 ctermbg=NONE cterm=NONE
+hi cssBorderProp ctermfg=189 ctermbg=NONE cterm=NONE
+hi cssUIProp ctermfg=189 ctermbg=NONE cterm=NONE
+hi cssMultiColumnProp ctermfg=189 ctermbg=NONE cterm=NONE
+hi cssTransformProp ctermfg=189 ctermbg=NONE cterm=NONE
+hi cssIEUIProp ctermfg=189 ctermbg=NONE cterm=NONE
+hi cssBackgroundProp ctermfg=189 ctermbg=NONE cterm=NONE
+hi cssColorProp ctermfg=189 ctermbg=NONE cterm=NONE
+hi cssInteractProp ctermfg=189 ctermbg=NONE cterm=NONE
+
+hi cssFunction ctermfg=224 ctermbg=NONE cterm=NONE
+hi cssFunctionName ctermfg=224 ctermbg=NONE cterm=NONE
+hi cssStringQQ ctermfg=224 ctermbg=NONE cterm=NONE
+
+hi cssAttrRegion ctermfg=224 ctermbg=NONE cterm=NONE
+hi cssPositioningAttr ctermfg=224 ctermbg=NONE cterm=NONE
+hi cssFontAttr ctermfg=224 ctermbg=NONE cterm=NONE
+hi cssTextAttr ctermfg=224 ctermbg=NONE cterm=NONE
+hi cssFlexibleBoxAttr ctermfg=224 ctermbg=NONE cterm=NONE
+hi cssBoxAttr ctermfg=224 ctermbg=NONE cterm=NONE
+hi cssTransitionAttr ctermfg=224 ctermbg=NONE cterm=NONE
+hi cssCommonAttr ctermfg=224 ctermbg=NONE cterm=NONE
+hi cssUIAttr ctermfg=224 ctermbg=NONE cterm=NONE
+hi cssBorderAttr ctermfg=224 ctermbg=NONE cterm=NONE
+hi cssMultiColumnAttr ctermfg=224 ctermbg=NONE cterm=NONE
+
+hi cssColor ctermfg=224 ctermbg=NONE cterm=NONE
+
+
+"Important
 hi Structure ctermfg=174 ctermbg=NONE cterm=NONE
 hi Directory ctermfg=48 ctermbg=NONE cterm=NONE
 hi String ctermfg=189 ctermbg=NONE cterm=NONE

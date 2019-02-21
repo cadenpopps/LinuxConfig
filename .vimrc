@@ -32,12 +32,13 @@ let NERDTreeShowHidden=1
 nnoremap <C-z> :Goyo <bar> highlight StatusLineNC ctermfg=white <CR>
 
 
+
 "Keybindings
 nnoremap <Leader>n :edit ~/shared/notes/
 noremap <C-s> <Esc>:w<CR>
 noremap <C-x> <Esc>:x<CR>
 noremap <C-q> <Esc>:q!<CR>
-noremap <C-p> <Esc>:Files<CR>
+noremap <C-p> <Esc><C-s>:Files<CR>
 noremap <C-t> <Esc>20j<S-v>40k=20j
 inoremap <C-t> <Esc>20j<S-v>40k=20j
 noremap <Leader>t <Esc>gg=G <C-o><C-o>

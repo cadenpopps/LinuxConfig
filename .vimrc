@@ -2,6 +2,7 @@ syntax enable
 set noswapfile
 set nocompatible
 set number
+set autoindent
 set numberwidth=7
 set ttyfast
 

@@ -3,6 +3,8 @@ case $- in
       *) return;;
 esac
 
+stty -ixon
+
 HISTCONTROL=ignoreboth
 shopt -s histappend
 

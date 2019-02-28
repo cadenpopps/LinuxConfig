@@ -6,7 +6,7 @@ alias twitch='. ~/scripts/twitchBots.sh'
 
 alias arch='neofetch --color_blocks off --ascii_colors #fccfc6 #fccfc6 #fccfc6 #fccfc6 #fccfc6 #fccfc6'
 
-alias v="vim"
+alias vim="tags; vim"
 alias pdf='pdflatex'
 alias urar='unrar e'
 alias tags='ctags -Rf .tags'

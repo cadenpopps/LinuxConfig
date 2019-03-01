@@ -37,6 +37,7 @@ nnoremap <C-z> :Goyo <bar> highlight StatusLineNC ctermfg=white <CR>
 "Keybindings
 nnoremap <Leader>n :edit ~/shared/notes/
 nnoremap <C-s> <Esc>:w<CR>
+inoremap <C-s> <Esc>:w<CR>
 nnoremap <C-x> <Esc>:x<CR>
 nnoremap <C-q> <Esc>:q!<CR>
 nnoremap <C-p> <Esc><C-s>:Files<CR>

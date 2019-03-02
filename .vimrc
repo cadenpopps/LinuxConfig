@@ -4,6 +4,7 @@ set nocompatible
 set number
 set autoindent
 set numberwidth=7
+set relativenumber
 set ttyfast
 
 ""Plugins
@@ -25,7 +26,7 @@ filetype plugin indent on
 "Plugin Config
 
 "NERDTree
-"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 noremap <C-b> <Esc>:NERDTreeToggle<CR>
 let NERDTreeShowLineNumbers=0
 let NERDTreeShowHidden=1

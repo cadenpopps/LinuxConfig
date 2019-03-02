@@ -3,7 +3,7 @@ set noswapfile
 set nocompatible
 set number
 set autoindent
-set numberwidth=7
+set numberwidth=5
 set relativenumber
 set ttyfast
 
@@ -16,6 +16,10 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/fzf.vim'
+Plugin 'ervandew/supertab'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'SirVer/ultisnips'
+
 
 call vundle#end() 
 filetype plugin indent on
@@ -25,6 +29,21 @@ filetype plugin indent on
 
 "Plugin Config
 
+"SuperTab/YouCompleteMe/UltiSnips
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+"YouCompleteMe
+let g:ycm_max_num_candidates="3"
+let g:ycm_min_num_of_chars_for_completion="2"
+
+"UltiSnips
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+let UltiSnipsSnippetsDir="~/.vim/UltiSnips/"
+	
 "NERDTree
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 noremap <C-b> <Esc>:NERDTreeToggle<CR>

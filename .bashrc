@@ -3,6 +3,8 @@ case $- in
       *) return;;
 esac
 
+[[ -z $XDG_CONFIG_HOME ]] && export XDG_CONFIG_HOME="$HOME/.config"
+
 HISTCONTROL=ignoreboth
 shopt -s histappend
 

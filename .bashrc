@@ -1,9 +1,10 @@
 case $- in
-    *i*) ;;
-      *) return;;
+	*i*) ;;
+	*) return;;
 esac
 
 [[ -z $XDG_CONFIG_HOME ]] && export XDG_CONFIG_HOME="$HOME/.config"
+stty -ixon
 
 HISTCONTROL=ignoreboth
 shopt -s histappend

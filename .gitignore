@@ -4,5 +4,4 @@
 !.gitattributes
 !.gitignore
 !.gitconfig
-!.vimrc
-!.vim/*/*
+!.config/*/*

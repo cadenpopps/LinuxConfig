@@ -1,9 +1,8 @@
-*
+/*
 !.bashrc
 !.bash_aliases
 !.gitattributes
 !.gitignore
 !.gitconfig
-.config/**
 !.config/vim/**
 !.config/bash/**

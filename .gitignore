@@ -4,8 +4,6 @@
 !.gitattributes
 !.gitignore
 !.gitconfig
-!.config/
-!.config/*
-!.config/*/*
-.config/vim/*
-.config/bash/*
+.config/**
+!.config/vim/**
+!.config/bash/**

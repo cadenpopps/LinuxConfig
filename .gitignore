@@ -7,3 +7,5 @@
 !.config/
 !.config/*
 !.config/*/*
+.config/vim/
+.config/bash/

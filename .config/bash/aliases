@@ -27,8 +27,6 @@ alias workmode='. ~/scripts/workmode.sh'
 alias normalmode='. ~/scripts/normalmode.sh'
 
 alias ehttpd='sedhttpd '
-alias ehttpdc='sedhttpd_site '
-alias ehttpdd='sedhttpd "$_DUNGEON_DIR/"'
 alias eba='vim $_BASH_DIR/aliases'
 alias esnips='vim $_VIM_DIR/UltiSnips/'
 alias evars='vim $_BASH_DIR/vars'

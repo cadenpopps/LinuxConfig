@@ -118,7 +118,7 @@ hi Title ctermfg=189 ctermbg=NONE cterm=NONE
 hi Typedef ctermfg=174 ctermbg=NONE cterm=NONE
 
 "Editor
-hi MatchParen ctermfg=NONE ctermbg=224 cterm=NONE
+hi MatchParen ctermfg=NONE ctermbg=NONE cterm=bold
 hi Cursor ctermfg=238 ctermbg=224 cterm=NONE
 hi VertSplit ctermfg=189 ctermbg=NONE cterm=NONE
 hi Visual ctermfg=255 ctermbg=102 cterm=NONE

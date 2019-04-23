@@ -86,7 +86,7 @@ function pullBashrc(){
 
 function sedhttpd(){
 	if [ -f $_HTTPD ]; then
-		sudo sed -i "s|cadenpopps\/.*\"|cadenpopps\/$1\"|g" $_HTTPD
+		sudo sed -i "s|cadenpopps\/.*\"|cadenpopps\/projects\/$1\"|g" $_HTTPD
 			$($_HTTPD_RESTART)
 			fi
 }

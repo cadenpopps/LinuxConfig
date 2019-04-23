@@ -1,0 +1,147 @@
+set nocompatible
+set noswapfile
+set number
+set autoindent
+set numberwidth=5
+set ttyfast
+set lazyredraw
+set hidden
+set clipboard=unnamedplus
+syntax enable
+
+set runtimepath=$XDG_CONFIG_HOME/vim,$XDG_CONFIG_HOME/vim/after,$VIM,$VIMRUNTIME
+let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc"
+
+""Plugins
+filetype off
+set rtp+=~/.config/vim/bundle/Vundle.vim
+call vundle#begin()
+call vundle#rc("~/.config/vim/bundle")
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'junegunn/goyo.vim'
+Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plugin 'junegunn/fzf.vim'
+Plugin 'ervandew/supertab'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'SirVer/ultisnips'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-commentary'
+Plugin 'mattn/emmet-vim'
+
+call vundle#end() 
+filetype plugin indent on
+
+
+"Plugin Config
+
+"SuperTab/YouCompleteMe/UltiSnips
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+"YouCompleteMe
+let g:ycm_max_num_candidates="3"
+let g:ycm_min_num_of_chars_for_completion="2"
+
+"UltiSnips
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+let UltiSnipsSnippetsDir="~/.vim/UltiSnips/"
+
+"UltiSnips
+let g:user_emmet_leader_key=","
+
+"NERDTree
+"autocmd StdinReadPre * let s:std_in=1
+"autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+"noremap <Leader>b <Esc>:NERDTreeToggle<CR>
+"let NERDTreeShowLineNumbers=0
+"let NERDTreeShowHidden=1
+"let NERDTreeQuitOnOpen=1
+
+"Goyo
+nnoremap <C-z> :Goyo <bar> highlight StatusLineNC ctermfg=white <CR>
+
+
+"Keybindings
+nnoremap <Leader>n :edit ~/shared/notes/
+nnoremap <Leader>s :source ~/.config/vim/vimrc<CR>
+nnoremap <C-s> <Esc>:noh<CR>:w<CR>
+nnoremap <C-q> <Esc>:q!<CR>
+nnoremap <C-p> <Esc><C-s>:Files<CR>
+nnoremap <C-t> mt=ap`t
+imap <C-t> <Esc><C-t>
+noremap <Leader>t <Esc>mtgg=G`t
+
+"Navigation
+nnoremap j gj
+nnoremap k gk
+nnoremap H ^
+nnoremap L $
+
+
+"Color Config Mappings
+inoremap \lb 189
+inoremap \lg 102
+inoremap \dg 59
+inoremap \lo 224
+inoremap \do 174
+inoremap \r 160
+
+
+"Split config
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+set splitbelow
+set splitright
+
+
+"Tabs
+set tabstop=4
+set shiftwidth=4
+set noexpandtab
+set smarttab
+
+
+"Spacing
+set autoindent
+set smartindent
+set wrap
+set linebreak
+set backspace=indent,eol,start
+set virtualedit+=block
+
+
+"Search
+set ignorecase
+set incsearch 
+set smartcase "case sensitive if search has caps
+set showmatch "live highlight search results
+set hlsearch "highlight search results
+
+
+"Status bar
+let s:hidden_all=1
+set noruler 
+set laststatus=0 
+set noshowcmd
+
+
+"Tags
+set tags=tags;/,.tags;/
+
+
+"Check element
+nmap <C-S-e> :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+	if !exists("*synstack")
+		return
+	endif
+	echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
+
+colorscheme cadenpopps

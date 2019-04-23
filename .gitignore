@@ -6,3 +6,5 @@
 !.gitconfig
 !/.config/vim/
 !/.config/bash/
+!/.config/vim/**
+!/.config/bash/**

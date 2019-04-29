@@ -1,0 +1,9 @@
+[submodule "projects/site"]
+	path = projects/site
+	url = ssh://cadenpop@us155.siteground.us:18765/home/cadenpop/projects/site.git
+[submodule "projects/dungeon"]
+	path = projects/dungeon
+	url = ssh://cadenpop@us155.siteground.us:18765/home/cadenpop/projects/dungeon.git
+[submodule "projects/chess"]
+	path = projects/chess
+	url = /projects/chess

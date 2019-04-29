@@ -8,3 +8,5 @@
 !/.config/bash/
 !/.config/vim/**
 !/.config/bash/**
+!/projects/site/
+!/projects/dungeon/

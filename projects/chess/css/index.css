@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+#content-container{
+	display: flex;
+	flex-direction: column;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+#board{
+	position:relative;
+	margin: 10vmin auto;
+	width: 80vmin;
+	height: 80vmin;
+}
